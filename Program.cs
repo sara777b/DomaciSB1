@@ -4,34 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DomaciSB1
+namespace DomaciSB1._2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int prvi, drugi, rezultats, rezultato, rezultatm, rezultatd, rezultatostatak;
-            string stringPrvi, stringDrugi;
+            double a;
+            double b;
+            double dijagonala;
+            Console.Write("Unesite stranicu a: ");
 
-            Console.Write("Unesite prvi broj: ");
-            stringPrvi = Console.ReadLine();
-            Console.Write("Unesite drugi broj: ");
-            stringDrugi = Console.ReadLine();
+            a = Convert.ToDouble(Console.ReadLine());
 
-            prvi = int.Parse(stringPrvi);
-            drugi = int.Parse(stringDrugi);
+            Console.Write("Unesite stranicu b: ");
+            
+            b = Convert.ToDouble(Console.ReadLine());
 
-            rezultats = prvi + drugi;
-            rezultato = prvi - drugi;
-            rezultatm = prvi * drugi;
-            rezultatd = prvi / drugi;
-            rezultatostatak = prvi % drugi;
+            dijagonala = Math.Sqrt(a*a + b * b);
 
-            Console.WriteLine(prvi + " " + "+" + " " + drugi + " " + "=" + " " + rezultats);
-            Console.WriteLine(prvi + " " + "-" + " " + drugi + " " + "=" + " " + rezultato);
-            Console.WriteLine(prvi + " " + "*" + " " + drugi + " " + "=" + " " + rezultatm);
-            Console.WriteLine(prvi + " " + "/" + " " + drugi + " " + "=" + " " + rezultatd);
-            Console.WriteLine(prvi + " " + "ostatak" + " " + drugi + " " + "=" + " " + rezultatostatak);
+            Console.WriteLine("Dijagonala pravougaonika je" + " " + dijagonala);
             Console.ReadKey();
         }
     }
