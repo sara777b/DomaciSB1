@@ -13,7 +13,7 @@ namespace DomaciSB1._3
             int celzijus, kelvin, farenhajt, x = 273, y = 18, z = 10, e = 32;
             string stringCelzijus; 
 
-            Console.Write("Izrazite temperaturu u celzijusima (°): ");
+            Console.Write("Izrazite temperaturu u celzijusima (°C): ");
             stringCelzijus = Console.ReadLine();
 
             celzijus = int.Parse(stringCelzijus);
@@ -22,7 +22,7 @@ namespace DomaciSB1._3
             farenhajt = celzijus * y / z + e;
 
             Console.WriteLine("Temperatura u kelvinima (K) je: " + kelvin);
-            Console.WriteLine("Temperatura u farenhajtima (F) je: " + farenhajt);
+            Console.WriteLine("Temperatura u farenhajtima (°F) je: " + farenhajt);
             Console.ReadKey();
         }
     }
